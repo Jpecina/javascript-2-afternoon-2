@@ -113,8 +113,20 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   Have divider return an Array with the first item in the array being the evens array (all the even values from numbersArray) and the second item in the Array being the odds array (all the odd values from numbersArray).
 */
 
-//Code Here
+function divider(numbersArray){
+  let evensArray = [];
+  let oddsArray =[];
+  for ( let i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] % 2 === 0){
+      evensArray.push(numbersArray[i])
+    }
+    else{
+      oddsArray.push(numbersArray[i])
+    };
+  }
+  return [evensArray,oddsArray]
 
+}
 
 
 ////////// PROBLEM 7 //////////
@@ -163,7 +175,14 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
   addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 */
 
-//Code Here
+function removeItem(myGroceryList,modItem){
+  for (i = 0; i<myGroceryList.length;i++){
+    if(myGroceryList[i] === modItem){
+      myGroceryList.splice(0,i,modItem)
+    }
+  }
+  return myGroceryList;
+}
 
 
 
@@ -266,7 +285,7 @@ var colt = {
   After that console.log the length of the Array and make sure that it's equal to 4. 
 */
 
-//Code Here
+devMountainEmployees.push(tyler,cahlan,ryan,colt);
 
 
 
@@ -275,7 +294,12 @@ var colt = {
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
 */
 
-//Code Here
+// for (i = 0; i < devMountainEmployees.length; i++){
+//   if (devMountainEmployees[i] === cahlan){
+//     devMountainEmployees.pop()
+//   }
+//   return devMountainEmployees;
+// }
 
 
 
@@ -306,7 +330,7 @@ var user1 = {
 };
 // Do not edit the code above.
 
-//Code Here
+
 
 
 
